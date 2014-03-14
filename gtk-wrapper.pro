@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += main.c \
     fenetre.c \
-    graphic.c
+    graphic.c \
+    conteneurH.c
 
 INCLUDEPATH += /usr/include/gtk-2.0 \
 /usr/include/glib-2.0 \
@@ -22,4 +23,5 @@ unix: PKGCONFIG += gtk+-2.0
 
 HEADERS += \
     fenetre.h \
-    graphic.h
+    graphic.h \
+    conteneurH.h

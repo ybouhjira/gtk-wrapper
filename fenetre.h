@@ -10,4 +10,8 @@ void fenetre_detruire(Fenetre **fenetre);
 
 void fenetre_afficher(Fenetre *fen);
 
+void fenetre_changer_titre(Fenetre *fen, char titre[100]);
+
+const char* fenetre_titre(Fenetre *fen);
+
 #endif // LIB_H

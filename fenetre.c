@@ -26,3 +26,13 @@ void fenetre_afficher(Fenetre *fen)
 {
   gtk_widget_show_all(fen->gtkWindow);
 }
+
+void fenetre_changer_titre(Fenetre *fen, char titre[100])
+{
+  gtk_window_set_title(GTK_WINDOW(fen->gtkWindow), titre);
+}
+
+const char *fenetre_titre(Fenetre *fen)
+{
+  return gtk_window_get_title(GTK_WINDOW(fen->gtkWindow));
+}
